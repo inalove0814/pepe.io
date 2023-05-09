@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <hr size="2" color="green">
+    <div align="center"><h1>페페 때리기</h1></div>
+    
+    <div align="center"><span>
+      <a href="pepeindex.html">돌아가기</a></span>
+    </div>
+    
+    <style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #counter {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      #click-button {
+        padding: 12px 24px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        background-color: #008080;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 250px; /* 추가 */
+        height: 120px; /* 추가 */
+      }
+
+      #click-button:hover {
+        background-color: #005959;
+      }
+
+      #history {
+        background-color: #f0f0f0;
+        padding: 24px;
+        height: 50vh;
+        overflow-y: scroll;
+      }
+
+      #history-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #history-list li {
+        border-bottom: 1px solid #c0c0c0;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      #history-list li:hover {
+        background-color: #e0e0e0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="counter">
+      <h1><div align="center"><span><a href=https://namu.wiki/w/페페%20더%20프로그 >
+      <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTEwMTFfMjQ1/MDAxNTcwODA1MzU1ODkw.9ZyAgnbIhwtCLpKAPPucFyPbGJKPNcZTt1Lqj7VSd6Mg.JPNDYv6WLIfHKGUREKndPzhvxzqofhodkwdvIp3VAKUg.JPEG.sssss747/B069F215-7344-49C1-8548-70425427DC39-22206-0000104FDB5CA962_file.jpg?type=w800" width="50%"></div></h1></a></span>
+      
+      
+      <p>페페 때린 횟수: <span id="count">0</span></p>
+      <button id="click-button">때려버려</button>
+    </div>
+    <hr size="2" color="green">
+    <div id="history">
+      <h2>Punch History</h2>
+      <ul id="history-list"></ul>
+    </div>
+    <script>
+      const countSpan = document.getElementById('count');
+      const clickButton = document.getElementById('click-button');
+      const historyList = document.getElementById('history-list');
+
+      let count = 0;
+
+      clickButton.addEventListener('click', () => {
+        count++;
+        countSpan.textContent = count;
+
+        const historyItem = document.createElement('li');
+        historyItem.textContent = `Punch at ${new Date().toLocaleString()}`;
+        historyList.appendChild(historyItem);
+        historyList.scrollTop = historyList.scrollHeight;
+        const audio = new Audio('audios/punch1.mp3');
+      audio.play();
+      });
+    </script>
+    <h5 align="center">충청남도 천안시 동남구 페페대학로 1 페페대학교 (c) PEPE University. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">&ShortUpArrow;TOP</a></h5>
+    <audio autoplay loop>
+  
+      <source src="audios/ghost duet.mp3" type="audio/mp3">
+      <source src="audios/ghost duet.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+  </body>
+</html>
+ 
