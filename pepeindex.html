@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
         <title>PEPE University.</title>
         <style> 
             body {
@@ -10,27 +9,55 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            p {
+                border: 3px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            h5 {
+                text-align: center;
+                color: white;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
         </style>
     </head>
-    <body bgcolor="white" leftmargin="50" rightmargin="50">
-        <a name="top"><div align="center"><img src="images/pepelogo1.png"></a></div>
-        
-    
-    <p style="border: 3px solid black; padding: 10px;"
-        align="center">
-        <span><a href="count.html">페페 쳐 패러가기</a></span>
-        </div>
-    </p>
-
-        <a name="down"><div align="center"><img src="https://blog.kakaocdn.net/dn/dsmvQq/btroAAklqNd/00m1EuK3zvetYcIX9fCJO0/img.gif" width="70%"></div>
-
-        
-        <h5 align="center">충청남도 천안시 동남구 페페대학로 1 페페대학교 (c) PEPE University. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">&ShortUpArrow;TOP</a></h5>
-        <div align="center"><iframe width="0" height="0" src="https://www.youtube.com/embed/g2ZeT9v7wt0?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+    <body>
+        <div align="center"><img src="images/pepelogo1.png"></div>
+        <p><a href="count.html">페페 쳐 패러가기</a></p>
+        <div align="center"><img src="https://blog.kakaocdn.net/dn/dsmvQq/btroAAklqNd/00m1EuK3zvetYcIX9fCJO0/img.gif"></div>
+        <h5>충청남도 천안시 동남구 페페대학로 1 페페대학교 (c) PEPE University. All rights reserved. <a href="#top">&ShortUpArrow;TOP</a></h5>
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/g2ZeT9v7wt0?autoplay=1" frameborder="0" allowfullscreen></iframe>
         <audio autoplay loop>
-        <source src="audios/ghost duet.mp3" type="audio/mp3">
-        <source src="audios/ghost duet.ogg" type="audio/ogg">
-
-
+            <source src="audios/ghost duet.mp3" type="audio/mp3">
+            <source src="audios/ghost duet.ogg" type="audio/ogg">
+        </audio>
+        <footer>&copy; 2023 PEPE University. All rights reserved.</footer>
     </body>
 </html>
+
+<style>
+    /* 768px 이하 화면 */
+    @media only screen and (max-width: 768px) {
+        body {
+            background-image: none;
+            background-color: white;
+        }
+        p {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        h5 {
+            color: black;
+        }
+    }
+</style>
